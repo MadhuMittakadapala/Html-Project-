@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Forms</title>
+</head>
+<body>
+    <h2>html forms</h2>
+    <form>
+        <label for="fname">First Name:</label><br>
+        <input type="text" id="fname" name="fname" value="enter your first name"><br>
+        <br>
+        
+        <label for="lname">Last Name:</label><br>
+        <input type="text" id="lname" name="lname" value="enter your last name">
+        <br>
+        <br>
+        <br>
+        <input type="submit" value="submit">
+
+    </form>
+        <!-- this is input types -->
+        <!--  -->
+
+        <h2> input types</h2>
+        <br><br>
+        <!-- radio buttons -->
+        <h1>Radio Buttons</h1>
+        <p>Radio buttons let us user select one of the limited number of choices.</p>
+
+        <br>
+        <p> Choose your favorite web languages:</p>
+        <form >
+            <input type="radio" id="html"  name="fav-language" value="HTML">
+            <label for="html">HTML</label><br>
+            <input type="radio" id="css"  name="fav-language" value="CSS">
+            <label for="css">CSS</label><br>
+            <input type="radio" id="javascript"  name="fav-language" value="JavaScript">
+            <label for="html">JavaScript</label><br>
+        </form>    
+            
+            <!-- checkboxes -->
+            <h1>Checkboxes</h1>
+            <p>Checkboxes le a user select zero or more options of a limited number f choices.</p>
+            <form action="">
+                <input type="checkbox" id="vehicle1" name="vehicle1" value="bike">
+                <label for="vehicle1">I have a bike</label><br>
+                <input type="checkbox" id="vehicle2" name="vehicle2" value="car">
+                <label for="vehicle1">I have a car</label><br>
+                <input type="checkbox" id="vehicle3" name="vehicle3" value="boat">
+                <label for="vehicle1">I have a boat</label><br><br><br>
+                <input type="submit" value="submit">
+            </form>
+
+            <!-- box control select tag-->
+            <h1>Box Control or Drop Down List</h1>
+            <p>a select box also called drop down which provides options to list down vaious options in the form of drop down list, from where a user can select one or more options </p>
+            <form action="">
+                <select name="dropdown" id="">
+                    <option value="Maths" selected> Maths</option>
+                    <option value="Physics" > Physics</option>
+                    <option value="Science" > Science</option>
+                    <option value="Hindi" > Hindi</option>
+                    <option value="Computers" > Computer Science</option>
+                    <option value="English" > English</option>
+                </select>
+            </form>
+        <!-- upload file  -->
+        <h1>File Upload Box</h1>
+        <p>if you want to allow a user to upload a file to your website you will need to use a file upload box, also file selected box.</p>
+        <form action="">
+            <input type="file" name="fileUpload" accept="image/*">
+
+        </form>
+        <!-- reset input type -->
+        <h1>input type reset</h1>
+        <p>this is defines a reset button that will reset all form values totheir default values.</p>
+        <form action="">
+            <label for="fname" >First Name:</label><br>
+            <input type="text" id="fname" name="fname" value="">
+            <br><br>
+            <label for="lname" >Last Name:</label><br>
+            <input type="text" id="lname" name="lname" value="">
+            <br><br><br>
+            <input type="submit" value="submit"><br><br>
+            <input type="reset" >
+        </form>
+
+        <!-- input type button -->
+        <h1>input type button:</h1>
+        <input type="button" onclick="alert('HEllo this is button')" value="click me here">
+
+   
+
+    <!-- input type color -->
+    <h1>input type color:</h1>
+    <form action="">
+        <label for="forcolor">Select your favorite color:</label>
+        <input type="color" id="favcolor" name="favcolor">
+    </form>
+
+    <!-- input type date -->
+    <h1>input type date</h1>
+    <form action="">
+        <label for="birthday">Birthday:</label>
+        <input type="date" id="birthday" name="birthday">
+        <br>
+        <br>
+        <input type="submit" value="submit">
+    </form>
+    
+    <h3>you can also use min and max attributes to add restrictions to dates</h3>
+    <form action="">
+        <label for="datemax">Enter date before 1980-01-01:</label>
+        <input type="date" id="datemax" name="datemax" max="1979-12-31"><br><br>
+        <label for="datemin">Enter date after 2000-01-01:</label>
+        <input type="date" name="datemin" id="datemin" min="2000-01-02">
+    </form>
+    <br>
+    <br>
+    <br>
+    <br>
+    <!-- date time-local -->
+    <h3>the input type specifies a date and time input field with no time zone.Depending on browser support,a datepicker can show up in the input field.</h3>
+    <form action="">
+    <label for="birthdaytime">Birthday(date and time)</label>
+    <input type="datetime-local" id="birthdaytime" name="birthdaytime">
+    <input type="submit" value="submit">
+    </form>
+
+    <!-- input type email -->
+    <h2>Input type Email</h2>
+    <form action="">
+        <label for="email"> Enter your email:</label>
+        <input type="email" id="email" name="email">
+    </form>
+
+    <!-- this is hidden input  -->
+    <h3>the hidden input \type degines a hidden input field not visible to a user.</h3>
+    <form action="">
+        <label for="fname"> First Name:</label>
+        <input type="text" id="fname" name="fname">
+        <br><br>
+        <input type="hidden" id="custId" name="custId" value="3487">
+        <br><br><br>
+        <input type="submit" value="submit">
+    </form>
+
+    <!-- month input type-->
+    <br><br>
+    <h2> the input allows the user to select a month and year.depending on brwser support a date picker can show up in the input field.</h2>
+
+     <form>
+        <label for="bdaymonth">Birthday (month and year):</label>
+        <input type="month" id="dateyear" value="dateyear">
+        <input type="submit" value="submit">
+     </form>
+     <br>
+     <br>
+     <br>
+     <br>
+     <br>
+
+     <!-- textarea tag  -->
+     <!-- this is usig for give a description -->
+     <h1>this is for description using textarea tag</h1>
+     <p>the rows attribute specifies the visible number of lines in a text area.</p><br>
+     <p>the cols attribute specifies the visible width of a text area.</p>
+     <textarea name="message" id="desc" cols="30" rows="10"> write a description here...</textarea>
+     <br>
+     <br>
+     <br>
+     <!-- the fieldset and legend elements -->
+     <h1>the 'fieldset' element is used to group related data in a form.</h1>
+     <h1>the 'legend' element defines a caption for the 'fieldset' element.</h1>
+     <form action="">
+        <fieldset>
+            <legend>Personal information:</legend>
+
+            <label for="fname">First Name:</label><br>
+            <input type="text" id="fname" name="fname" value=""><br><br>
+            <label for="lname">Last Name:</label><br>
+            <input type="text" id="lname" name="lname" value=""><br><br><br>
+            <input type="submit" value="Submit">
+        </fieldset>
+    </form>
+
+        <!-- the datalist element -->
+        <h2>the datalist element specifies a list of pre-defined options for an input element.
+            user will see a drop down list of the pre-defineed options as they input data.
+        </h2>
+        <form action="">
+            <input list="browsers">
+            <datalist id="browsers">
+                <option value="Internet explorer"></option>
+                <option value="Chrome"></option>
+                <option value="Opera"></option>
+                <option value="Safari"></option>
+                <option value="Mozilla"></option>
+            </datalist>
+        </form>
+        <br><br><br>
+        <!-- input type range  -->
+        <h1>the input type range defines a control for entering a number whose exact value is not important like slider control .default range is 0-100.Howerver ,you can set restrictions on what numbers are accepted wth the min, max, and step attributes.</h1>
+        <form action="">
+            <label for="vol"> Volume (between 0 and 50):</label>
+            <input type="range" id="vol" name="vol" min="0" max="50">
+        </form>
+
+        <!-- input type search  -->
+        <br><br><br>
+        <h1>this is used for search fields a search field behaves like a regular text field. </h1>
+        <form action="">
+            <label for="gsearch"> Google search:</label>
+            <input type="search" id="search" name="gsearch">
+        </form>
+   
+</body>    
+</html>
